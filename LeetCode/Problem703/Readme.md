@@ -43,4 +43,10 @@ The `add` function adds a new number to the array (which was initialized with [4
 * `Add(9)` would cause sorted array to be `[2, 3, 4, 5, 5, 8, 9, 10]` so `8` is our value.
 * `Add(4)` would cause sorted array to be `[2, 3, 4, 4, 5, 5, 8, 9, 10]` so we would still get `8`.
 
-First simple idea to get working would be to sort the array after every add, then return `array[length - k]` adjusting for zero based if needed.
+### First attempt
+Simple idea to get working would be to sort the array after every add, then return `array[length - k]` adjusting for zero based if needed.
+
+### Idea from user: skazantsev
+We can build a `MinHeap` that contains only `k` largest elements. On `add`:
+* compare a new element `x` with `min` to decide if we should `pop min` and `insert x`
+* take into account a case when `heap_size` is less than `k`
