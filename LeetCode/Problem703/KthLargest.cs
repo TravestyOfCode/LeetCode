@@ -15,9 +15,9 @@ public class KthLargest
         K = k;
     }
 
-    public int Add(int k)
+    public int Add(int val)
     {
-        Nums.Add(k);
+        Nums.Add(val);
         Nums.Sort();
         return Nums[Nums.Count - K];
     }
