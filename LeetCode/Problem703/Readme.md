@@ -50,3 +50,8 @@ Simple idea to get working would be to sort the array after every add, then retu
 We can build a `MinHeap` that contains only `k` largest elements. On `add`:
 * compare a new element `x` with `min` to decide if we should `pop min` and `insert x`
 * take into account a case when `heap_size` is less than `k`
+
+First iteration I used an array that I would shift values to the right (and let them drop off) to insert a new value. I think I could increase the speed if I used a better method of bubbling up/down to limit the number of shifts. For small arrays it's not bad, but larger queue would be slow.
+
+### Priority Queue
+.NET 6.0 added a priority queue type that handles this. We keep track of how many items back we want to store so we can limit the size. We then add items to the queue, then check if we have too many items. If so, we remove the lowest value (called dequeue).
