@@ -1,9 +1,9 @@
 ﻿using LeetCode.Problems1To9.Problem7;
 using Xunit;
 
-namespace LeetCode.Tests.Problems1To9.Problem7
+namespace LeetCode.Tests.Problems1To9
 {
-    public class SolutionTests
+    public class Problem7SolutionTests
     {
         [Theory]
         [MemberData(nameof(Data))]

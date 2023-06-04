@@ -2,9 +2,9 @@
 using Newtonsoft.Json;
 using Xunit;
 
-namespace LeetCode.Tests.Problems1To9.Problem2
+namespace LeetCode.Tests.Problems1To9
 {
-    public class SolutionTests
+    public class Problem2SolutionTests
     {
         [Theory]
         [MemberData(nameof(Data))]

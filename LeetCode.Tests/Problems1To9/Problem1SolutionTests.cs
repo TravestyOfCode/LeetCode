@@ -1,9 +1,9 @@
 ﻿using LeetCode.Problems1To9.Problem1;
 using Xunit;
 
-namespace LeetCode.Tests.Problems1To9.Problem1
+namespace LeetCode.Tests.Problems1To9
 {
-    public class SolutionTests
+    public class Problem1SolutionTests
     {
         [Theory]
         [InlineData(new int[] { 2, 7, 11, 15 }, 9, new int[] { 1, 0 })]

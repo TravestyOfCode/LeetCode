@@ -6,9 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace LeetCode.Tests.Problems1To9.Problem6
+namespace LeetCode.Tests.Problems1To9
 {
-    public class SolutionTests
+    public class Problem6SolutionTests
     {
         [Theory]
         [MemberData(nameof(Data))]
