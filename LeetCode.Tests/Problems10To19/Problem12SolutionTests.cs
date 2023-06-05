@@ -15,6 +15,20 @@ namespace LeetCode.Tests.Problems10To19
             string result = solution.IntToRoman(num);
 
             // Assert
+            Assert.Equal(expected, result);        
+        }
+
+        [Theory]
+        [MemberData(nameof(Data))]
+        public void SubtractMethodCorrectlyConvertsToRoman(int num, string expected)
+        {
+            // Arrange
+            SubtractMethod solution = new SubtractMethod();
+
+            // Act
+            string result = solution.IntToRoman(num);
+
+            // Assert
             Assert.Equal(expected, result);
         }
 
