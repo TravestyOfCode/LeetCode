@@ -22,7 +22,9 @@ namespace LeetCode.Tests.Problems10To19
             new List<object[]>
             {
                 new object[]{ new string[] { "flower", "flow", "flight" }, "fl" },
-                new object[]{ new string[] { "dog", "racecar", "car" }, string.Empty }
+                new object[]{ new string[] { "dog", "racecar", "car" }, string.Empty },
+                new object[]{ new string[] { }, string.Empty },
+                new object[]{ new string[] { "reflower", "flow", "flight" }, string.Empty }
             };
     }
 }
